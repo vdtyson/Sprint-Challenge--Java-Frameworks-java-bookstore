@@ -74,10 +74,13 @@ public class Book extends Auditable {
     }
 
     public void setYearPublished(Integer yearPublished) {
+        if(yearPublished != null) {
+            this.hasYearPublished = true;
+        }
         this.yearPublished = yearPublished;
     }
 
-    public boolean isHasYearPublished() {
+    public boolean isYearPublished() {
         return hasYearPublished;
     }
 

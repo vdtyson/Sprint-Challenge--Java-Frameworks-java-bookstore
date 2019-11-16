@@ -31,6 +31,10 @@ public class Author extends Auditable {
         this.firstName = firstName;
     }
 
+    public void addBook(Book newBook) {
+        books.add(newBook);
+    }
+
     public long getId() {
         return id;
     }
